@@ -2,6 +2,7 @@
     width: 1146px;
     height: 687px;
     position: relative;
+    margin: 0 auto;
 }
 
 .fon {
@@ -21,7 +22,6 @@
     margin-top: 20px;
     padding-right: 30px;
     left: 140px;
-    z-index: 9999;
 }
 
 .contacts {
@@ -140,6 +140,7 @@
 
 .arrow {
     display: flex;
+    gap: 10px;
 }
 
 .arrow div {
@@ -172,4 +173,16 @@
 
 .searchBut {
     cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    top: 65px;
+    left: 138px;
+}
+
+.ellipse {
+    position: absolute;
+    top: 50px;
+    left: 160px;
 }

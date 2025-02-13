@@ -8,7 +8,9 @@ import svg3 from "../../../public/img/svg3.svg"
 import leftarrow from "../../../public/img/leftarrow.png"
 import lk from "../../../public/img/lk.png"
 import basket from "../../../public/img/basket.png"
+import ellipse from "../../../public/img/ellipse.png"
 import rightarrow from "../../../public/img/rightarrow.png"
+import line from "../../../public/img/line.png"
 import catalogBut from "../../../public/img/catalogBut.png"
 import headerImg from "../../../public/img/headerImg.png"
 import Image from 'next/image';
@@ -18,6 +20,8 @@ export default function Header() {
         <div className={styles.wrapper}>
             <Image className={styles.fon} src={fon} alt="" />
             <Image className={styles.logo} src={logo} alt="" />
+            <Image className={styles.line} src={line} alt="" />
+            <Image className={styles.ellipse} src={ellipse} alt="" />
             <div className={styles.menu}>
                 <div className={styles.contacts}>
                     <div className={styles.now}>Главная</div>

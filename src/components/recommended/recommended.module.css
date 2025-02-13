@@ -1,0 +1,114 @@
+.wrapper {
+    width: 1146px;
+    height: 634px;
+    margin: 80px auto 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.top h1 {
+    font-size: 38px;
+    color: rgba(44, 48, 49, 1);
+    font-family: 'MyFont';
+}
+
+.link {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.link span {
+    color: rgba(255, 197, 61, 1);
+    font-family: 'MyFont2';
+    font-size: 20px;
+}
+
+.cards {
+    width: 1146px;
+    height: 488px;
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 264px;
+    height: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img {
+    width: 264px;
+    height: 306px;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content {
+    width: 264px;
+    height: 172px;
+    background-color: rgba(243, 243, 243, 1);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.name {
+    color: rgba(44, 48, 49, 1);
+    font-family: 'MyFont2';
+}
+
+.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.count {
+    display: flex;
+    gap: 8px;
+    color: white;
+    padding: 8px 0;
+    z-index: 9999;
+}
+
+.count div {
+    font-family: 'MyFont5';
+}
+
+.yellow {
+    border-right: 1px solid rgba(255, 197, 61, 1);
+    padding-right: 8px;
+    font-family: 'MyFont5';
+}
+
+.arrow {
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.arrow div {
+    cursor: pointer;
+}
