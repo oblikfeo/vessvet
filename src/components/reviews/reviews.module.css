@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    height: 478px;
+    height: 570px;
     background-color: rgba(243, 243, 243, 1);
     margin-top: 80px;
     padding-top: 80px;
@@ -34,4 +34,113 @@
     color: rgba(255, 197, 61, 1);
     font-family: 'MyFont2';
     font-size: 20px;
+}
+
+.comment {
+    width: 558px;
+    height: 252px;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.ellipseWhite {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.who {
+    min-width: 146px;
+}
+
+.who span {
+    font-family: 'MyFont';
+    font-weight: 700;
+    color: rgba(44, 48, 49, 1);
+}
+
+.who div {
+    font-family: 'MyFont5';
+    font-size: 16px;
+    color: rgba(44, 48, 49, 1);
+}
+
+.link {
+    margin-top: 10px;
+    color: rgba(255, 197, 61, 1);
+}
+
+.link a {
+    all: unset;
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    font-family: 'MyFont2';
+    font-weight: 400;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.count {
+    display: flex;
+    gap: 8px;
+    color: rgba(0, 0, 0, 1);
+    padding: 12px 0;
+    z-index: 9999;
+}
+
+.count div {
+    font-family: 'MyFont5';
+}
+
+.yellow {
+    border-right: 1px solid rgba(255, 197, 61, 1);
+    padding-right: 8px;
+    font-family: 'MyFont5';
+}
+
+.arrow {
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.arrow div {
+    cursor: pointer;
+}
+
+.feedback {
+    height: 40px;
+    width: 194px;
+    font-family: 'MyFont5';
+    border: 1px solid rgba(255, 197, 61, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
+
+.feedback a {
+    all: unset;
+}
+
+.feedback:hover {
+    background-color: rgba(255, 197, 61, 1);
 }

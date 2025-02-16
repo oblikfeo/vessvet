@@ -1,3 +1,4 @@
+'use client'
 import styles from "./header.module.css";
 import fon from "../../../public/img/fon.png"
 import logo from "../../../public/img/logo.png"
@@ -14,8 +15,12 @@ import line from "../../../public/img/line.png"
 import catalogBut from "../../../public/img/catalogBut.png"
 import headerImg from "../../../public/img/headerImg.png"
 import Image from 'next/image';
+import { useState } from "react";
 
 export default function Header() {
+
+    const [page, setPage] = useState(1)
+
     return (
         <div className={styles.wrapper}>
             <Image className={styles.fon} src={fon} alt="" />
@@ -53,27 +58,50 @@ export default function Header() {
                         <div className={styles.about}>
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg1} alt="" />
-                                <span className={styles.font5}>у нас самый большой выбор</span>
+                                <span className={styles.font5}>
+                                    {page === 1 && "Снимаем с вас боль закупа, экономя ваши силы и время."}
+                                    {page === 3 && "Находим и поставляем всё, что вам требуется: редкие позиции, мелочёвку, непрофильную продукцию, «аленький цветок»."}
+                                    {page === 2 && "Доставляем товар до вашей двери при заказе на незначительную сумму, если вам это очень нужно."}
+                                </span>
                             </div>
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg2} alt="" />
-                                <span className={styles.font5}>любим клиентов</span>
+                                <span className={styles.font5}>
+                                    {page === 1 && "Снимаем с вас боль закупа, экономя ваши силы и время."}
+                                    {page === 3 && "Отгружаем электроматериалы без оплаты, в нерабочее время, в выходной и даже ночью, если у вас ЧП.."}
+                                    {page === 2 && "Даём протестировать интересующие образцы продукции, дабы развеять ваши смутные сомнения."}
+                                </span>
                             </div>
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg3} alt="" />
-                                <span className={styles.font5}>ответственный подход к своему делу</span>
+                                <span className={styles.font5}>
+                                    {page === 1 && "Делаем бесплатную доставку по городу уже сегодня или на следующий день, а в экстренной ситуации – в течение нескольких часов."}
+                                    {page === 3 && "Отсрочиваем платёж за товар на комфортный для вас период, договариваемся об оптимальных условиях оплаты."}
+                                    {page === 2 && "вас исполнительностью, обаянием и юмором вашего персонального менеджера."}
+                                </span>
                             </div>
                         </div>
-                        <div className={styles.anyText}>В баннере как правило указываются акции, предложения, товары, популярное и т.п. Тут будут изображения, фотографии, контент, которым клиент хочет наполнить главный экран.</div>
                     </div>
                     <div className={styles.pages}>
                         <div className={styles.count}>
-                            <div className={styles.yellow}>1</div>
-                            <div>6</div>
+                            <div className={styles.yellow}>{page}</div>
+                            <div>3</div>
                         </div>
                         <div className={styles.arrow}>
-                            <div><Image src={leftarrow} alt="" /></div>
-                            <div><Image src={rightarrow} alt="" /></div>
+                            <div><Image onClick={() => {
+                                if (page > 1) {
+                                    setPage(page - 1)
+                                }
+                            }}
+                                src={leftarrow}
+                                alt="" /></div>
+                            <div><Image onClick={() => {
+                                if (page < 3) {
+                                    setPage(page + 1)
+                                }
+                            }}
+                                src={rightarrow}
+                                alt="" /></div>
                         </div>
                     </div>
                 </div>

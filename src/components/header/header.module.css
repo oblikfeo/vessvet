@@ -83,7 +83,7 @@
 
 .font5 {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'MyFont5';
 }
 
@@ -110,6 +110,7 @@
 
 .flex {
     display: flex;
+    align-items: center;
 }
 
 .pages {
