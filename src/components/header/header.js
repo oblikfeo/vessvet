@@ -59,25 +59,22 @@ export default function Header() {
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg1} alt="" />
                                 <span className={styles.font5}>
-                                    {page === 1 && "Снимаем с вас боль закупа, экономя ваши силы и время."}
-                                    {page === 3 && "Находим и поставляем всё, что вам требуется: редкие позиции, мелочёвку, непрофильную продукцию, «аленький цветок»."}
-                                    {page === 2 && "Доставляем товар до вашей двери при заказе на незначительную сумму, если вам это очень нужно."}
+                                    {page === 1 && "Скорость обслуживания"}
+                                    {page === 2 && "Весь ваш объём закупок – наша забота (закрываем заказ на 100%)"}
                                 </span>
                             </div>
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg2} alt="" />
                                 <span className={styles.font5}>
-                                    {page === 1 && "Снимаем с вас боль закупа, экономя ваши силы и время."}
-                                    {page === 3 && "Отгружаем электроматериалы без оплаты, в нерабочее время, в выходной и даже ночью, если у вас ЧП.."}
-                                    {page === 2 && "Даём протестировать интересующие образцы продукции, дабы развеять ваши смутные сомнения."}
+                                    {page === 1 && " Экспертность команды"}
+                                    {page === 2 && "Наш менеджер = ваш сотрудник на удалёнке"}
                                 </span>
                             </div>
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg3} alt="" />
                                 <span className={styles.font5}>
-                                    {page === 1 && "Делаем бесплатную доставку по городу уже сегодня или на следующий день, а в экстренной ситуации – в течение нескольких часов."}
-                                    {page === 3 && "Отсрочиваем платёж за товар на комфортный для вас период, договариваемся об оптимальных условиях оплаты."}
-                                    {page === 2 && "вас исполнительностью, обаянием и юмором вашего персонального менеджера."}
+                                    {page === 1 && "Доставка бесплатно"}
+                                    {page === 2 && "Система лояльности"}
                                 </span>
                             </div>
                         </div>
@@ -85,7 +82,7 @@ export default function Header() {
                     <div className={styles.pages}>
                         <div className={styles.count}>
                             <div className={styles.yellow}>{page}</div>
-                            <div>3</div>
+                            <div>2</div>
                         </div>
                         <div className={styles.arrow}>
                             <div><Image onClick={() => {
@@ -96,7 +93,7 @@ export default function Header() {
                                 src={leftarrow}
                                 alt="" /></div>
                             <div><Image onClick={() => {
-                                if (page < 3) {
+                                if (page < 2) {
                                     setPage(page + 1)
                                 }
                             }}

@@ -71,9 +71,15 @@ export default function Footer() {
 
                 <div className={styles.footer}>
                     <div className={styles.icons}>
-                        <Image src={what} alt="" />
-                        <Image src={tg} alt="" />
-                        <Image src={inst} alt="" />
+                        <a href="https://wa.me/+79620598808" target="_blank" rel="noopener noreferrer">
+                            <Image src={what} alt="WhatsApp" />
+                        </a>
+                        <a href="https://t.me/lampastar" target="_blank" rel="noopener noreferrer">
+                            <Image src={tg} alt="Telegram" />
+                        </a>
+                        <a href="https://vk.com/lampastar" target="_blank" rel="noopener noreferrer">
+                            <Image src={inst} alt="VK" />
+                        </a>
                     </div>
                     <Image src={water} alt="" />
                 </div>
