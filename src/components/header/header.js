@@ -66,7 +66,7 @@ export default function Header() {
                             <div className={styles.flex}>
                                 <Image className={styles.svg} src={svg2} alt="" />
                                 <span className={styles.font5}>
-                                    {page === 1 && " Экспертность команды"}
+                                    {page === 1 && "Экспертность команды"}
                                     {page === 2 && "Наш менеджер = ваш сотрудник на удалёнке"}
                                 </span>
                             </div>
