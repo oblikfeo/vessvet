@@ -1,10 +1,10 @@
 import styles from "./recommended.module.css";
 import yellowArrow from "../../../public/img/yellowArrow.png"
 import add from "../../../public/img/add.png"
-import item1 from "../../../public/img/item1.png"
-import item2 from "../../../public/img/item2.png"
-import item3 from "../../../public/img/item3.png"
-import item4 from "../../../public/img/item4.png"
+import item1 from "../../../public/img/client5.png"
+import item2 from "../../../public/img/client6.png"
+import item3 from "../../../public/img/client7.png"
+import item4 from "../../../public/img/client8.png"
 import leftarrow from "../../../public/img/leftarrow.png"
 import rightarrow from "../../../public/img/rightarrow.png"
 import Image from "next/image";
@@ -24,12 +24,12 @@ export default function Recommended() {
 
                 <div className={styles.card}>
                     <div className={styles.img}>
-                        <Image src={item1} alt="" />
+                        <Image className={styles.contain} src={item1} alt="" width={224} height={266} />
                     </div>
                     <div className={styles.content}>
-                        <div className={styles.name}> Светильник настольный под лампу Е27 LE TL-203 черный LEEK </div>
+                        <div className={styles.name}>Кабель АВБШВ 4х240 ож ГОСТ</div>
                         <div className={styles.add}>
-                            348,00 ₽
+                            1555 ₽
                             <Image src={add} className={styles.button} alt="" />
                         </div>
                     </div>
@@ -37,12 +37,12 @@ export default function Recommended() {
 
                 <div className={styles.card}>
                     <div className={styles.img}>
-                        <Image src={item2} alt="" />
+                        <Image className={styles.contain} src={item2} alt="" width={224} height={266} />
                     </div>
                     <div className={styles.content}>
-                        <div className={styles.name}> Светильник настольный под лампу Е27 LE TL-203 черный LEEK </div>
+                        <div className={styles.name}>Контактор магнитный 80А катушка управления 220В АС 1НО+1НЗ LC1D</div>
                         <div className={styles.add}>
-                            348,00 ₽
+                            23 999 ₽
                             <Image src={add} className={styles.button} alt="" />
                         </div>
                     </div>
@@ -50,12 +50,12 @@ export default function Recommended() {
 
                 <div className={styles.card}>
                     <div className={styles.img}>
-                        <Image src={item3} alt="" />
+                        <Image className={styles.contain} src={item3} alt="" width={224} height={266} />
                     </div>
                     <div className={styles.content}>
-                        <div className={styles.name}> Светильник настольный под лампу Е27 LE TL-203 черный LEEK </div>
+                        <div className={styles.name}>Кронштейн под бандажную ленту для PSL(РКУ) D60-1.5 (на столб) JazzWay</div>
                         <div className={styles.add}>
-                            348,00 ₽
+                            755 ₽
                             <Image src={add} className={styles.button} alt="" />
                         </div>
                     </div>
@@ -63,12 +63,12 @@ export default function Recommended() {
 
                 <div className={styles.card}>
                     <div className={styles.img}>
-                        <Image src={item4} alt="" />
+                        <Image className={styles.contain} src={item4} alt="" width={224} height={266} />
                     </div>
                     <div className={styles.content}>
-                        <div className={styles.name}> Светильник настольный под лампу Е27 LE TL-203 черный LEEK </div>
+                        <div className={styles.name}>Кабель АВБШв 1х240</div>
                         <div className={styles.add}>
-                            348,00 ₽
+                            555 ₽
                             <Image src={add} className={styles.button} alt="" />
                         </div>
                     </div>
